@@ -1,0 +1,1139 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url(../img/headfont1.png);
+    color: floralwhite;
+}
+
+.text_title {
+    font-size: 33px;
+    color: #102746;
+}
+
+.text_descript {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.text_arrow {
+    color: #006DFE;
+    font-size: 16px; 
+    line-height: 24px;
+    /* font-style: normal;
+    font-weight: normal; */
+    font-weight: 600; 
+    margin-top: 55px;   
+}
+
+.arrow{
+    height: 8px;
+    width: 33px;
+    margin-left: 25px;
+    margin-bottom: 1px; 
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ================== animation flashlights start ======================= */
+/* 
+#wire{
+    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    top: -95px;
+    border-bottom: 3px solid #222;
+    height: 100px;
+ }
+
+ #wire li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 15px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 15px;
+    top: 102px;
+    display: inline-block;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    animation-name: even-flash;
+}
+
+ #wire li:nth-child(odd){
+     animation-name: odd-flash;
+ }
+
+#wire li:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 10px;
+    border-radius: 4px;
+    top: -5px;
+    left: 0px;
+    background: #444;
+}
+
+@keyframes even-flash {
+    0%, 100% {
+        background: goldenrod;
+        box-shadow: 0px 2px 20px 4px rgba(255,230,65,1);
+    }
+    50% {
+        background: yellow;
+        box-shadow: 0px 2px 20px 4px rgba(255,230,65,0.3);
+    }
+}
+
+@keyframes odd-flash {
+    50% {
+        background: red;
+        box-shadow: 0px 2px 20px 4px rgba(255,65,185,1);
+    }
+    0%,100% {
+        background: rgba(255,65,185,0.5);
+        box-shadow: 0px 2px 20px 4px rgba(255,65,185,0.3);
+    }
+} */
+/* ===================== animation flashlights end ======================== */
+
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* =================== Logo + Menu + SearchDiscover start ================= */
+
+.header__nav{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    width: 90%;
+} 
+
+.header__logo {
+    width: 85px;
+    height: 32px;    
+    margin: 85px 150px 0px 126px;
+}
+
+.header__nav__menu {
+    margin-top: 93px;    
+}
+
+.header__nav__menu li{
+    display: inline;
+    margin-left: 55px; 
+    font-size: 18px;
+}
+
+/* -------------------- */
+
+.header__nav__menu ul li a {
+    position: relative;
+    color: #fdfdfd;
+    /*  font-size: 1.25rem; */
+    text-decoration: none;
+      font-size:16px;
+}
+
+
+  
+.header__nav__menu ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
+    width: 0;
+    height: 2.5px;
+    background-color: #d11d1d;
+}
+  
+.header__nav__menu ul li a:hover:before {
+    width: 100%;
+}
+  
+.header__nav__menu ul li a::before {
+    transition: width 0.35s;
+}
+
+
+/* ============== Logo + Menu end ============ */
+/* ===========  SearchDiscover start ========== */
+.articlediscover__h1{
+    margin: 180px 0px 0px 226px;
+    /* width: 640px; */
+    font-size: 50px;
+    max-width: 840px;
+    min-width: 400px;
+}
+
+.articlediscover__descript{
+    margin: 22px 0px 0px 226px;
+    /* width: 560px; */
+    min-width: 350px;
+    max-width: 500px;
+}
+
+.articlediscover__search {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 0px 0px 226px;
+    padding: 0px 0px 365px 0px;
+    border-bottom: 2px solid white;
+}
+
+.articlediscover__search__text {
+    width: 204px;
+    padding-bottom: 34px;
+    margin-right: 65px;
+    margin-bottom: 20px;
+    border-bottom:  2px solid white;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    min-width: 240px;
+}
+
+/* ------------------------------ */
+.articlediscover__search__button {
+    width: 175px;
+    height: 58px;
+    background-color: #1B7DFF;
+    color: white;
+    font-weight: 500;
+    font-size: 24px; 
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    min-width: 175px;
+}
+
+.articlediscover__search__button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.articlediscover__search__button:active {
+    color: #000
+}
+
+.articlediscover__search__button:active:after {
+    background: transparent;
+}
+
+.articlediscover__search__button:hover:before {
+    opacity: 1;
+}
+.articlediscover__search__button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.articlediscover__search__button:hover {
+ 
+    color:black;
+    font-style:unset, bold;
+    font-size: 1.5em;
+    text-shadow: 0px 8px 3px rgb(0 0 0 / 25%);
+    font-weight: 700;
+}
+
+/* ------------------------------ */
+
+/* === radio button start === */
+
+input[type=radio]:checked +label{
+    background-color: rgba(76, 175, 80, 0.4);
+    border-radius: 4%;
+}
+
+input[type="radio"] {
+        appearance: none;
+      /*   margin: 0 40px; */
+        margin-right:25px;
+        width: 19px;
+        height:19px;
+        background: #5b3f35;
+        box-shadow: inset 0 0 0 0.4em #978e8e, 0 0 0 0.3em;
+        border-radius: 50%;
+        transition: 0.8s;
+        cursor: pointer;
+        color: #2b3560;
+}
+             
+input[type="radio"]:checked {
+          background: greenyellow;
+          box-shadow: inset 0 0 0 0.3em green, 0 0 0 0.3em green;
+}
+
+/* === radio button end === */
+/* ===========  SearchDiscover end ========== */
+/* ====================== Logo + Menu + SearchDiscover end ==================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* =============================== Benefits start ============================= */
+
+.asidebenefits {
+    margin: -250px auto auto;
+    padding: 86px 80px;
+    /* display: flex; */
+    display: grid;
+    /* grid-auto-flow: column; */
+    width: 90%;
+    min-width: max-content;
+    height: max-content;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+    border-radius:5px;
+}
+
+.asidebenefits__header {
+    display: grid;
+    grid-template-columns: auto;    
+    padding: 10px;
+    font-weight: 500;
+    font-size: 35px;
+    color:#102746;    
+}
+
+.asidebenefits__blocks__learn{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 10px;
+    margin-top: 60px;
+    grid-gap: 56px;
+}
+
+.asidebenefits__learn__title__welcome {
+    margin: 37px 0px 26px 0px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.asidebenefits__learn__title {
+    margin: 37px 0px 26px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+.asidebenefits__descript {
+    color: #000000;  
+    margin-bottom: 63px; 
+    min-width: 280px; 
+    max-width: 300px;
+}
+/* ================================ Benefits end ============================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ================================ Getinspired start ============================== */
+
+.getinspired__title {
+    display: flex; 
+    margin: 125px auto auto;
+    width: 90%;  
+    justify-content: space-between;
+    min-width: 360px;
+}
+
+.getinspired__title__text {
+    color: #102746;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.getinspired__title > .text_arrow{
+    margin-top: 0px;
+    padding-top: 6px;
+}
+
+.getinspired__line {
+    width: 260px;
+    height: 3px;
+    margin-top: 7px;
+    margin-left: 5%;
+    margin-bottom: 36px;
+    border-bottom: 3px solid #006DFE;
+}
+
+/* =========================== */
+
+.getinspired {
+    margin: 36px auto;
+    margin-bottom: 0px;
+    width: 90%;    
+    display:grid;  
+    grid-gap: 10px;    
+    grid-template-columns: repeat(auto-fill, minmax(405px, 1fr));
+    max-height: max-content;
+    overflow:hidden;    
+}
+
+.getinspired__mount{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.227),rgba(0, 0, 0, 0.35)), url(../img/mount\ fuji.png);
+    background-position: center;
+}
+
+.getinspired__kyoto{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.127),rgba(0, 0, 0, 0.35)), url(../img/kyoto.png);
+    background-position: center;      
+}   
+
+.getinspired__mount,
+ .getinspired__kyoto { 
+    transition: 1s;
+    max-width: 638px;
+    min-height: 340px;
+}   
+
+.getinspired__mount:hover,
+.getinspired__kyoto:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    z-index: 2;
+}
+/* ========================== */
+
+.getinspired__tns {
+    margin: 10px auto;
+    width: 90%;   
+    display: grid; 
+    gap: 10px;    
+    max-height: max-content;
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr)); 
+/*     overflow:hidden;     */
+}
+
+.getinspired__tns__tokyo{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:end;
+    padding-bottom: 30px;
+    padding-left: 30px;   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.127),rgba(0, 0, 0, 0.35)), url(../img/tokyo.png);
+    background-position:center;
+    background-size:cover;  
+}
+
+.getinspired__tns__niigata{
+    display: flex;
+    flex-wrap: wrap;
+    align-content:end;
+    padding-bottom: 30px;
+    padding-left: 30px;   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.127),rgba(0, 0, 0, 0.35)), url(../img/niigata.png);
+    background-position:center;
+    background-size:cover;  
+}
+
+.getinspired__tns__sapporo{    
+    display: flex;
+    flex-wrap: wrap;
+    align-content:end;
+    padding-bottom: 30px;
+    padding-left: 30px;   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.127),rgba(0, 0, 0, 0.35)), url(../img/sapporo.png);
+    background-position:center;
+    background-size:cover;  
+}    
+
+.getinspired__img__text{    
+   font-size: 50px;
+   color: #FFFFFF;
+   font-weight: 600;
+}
+
+.getinspired__tns__tokyo,
+.getinspired__tns__niigata, 
+.getinspired__tns__sapporo{
+    transition: 1s;    
+    /* filter: brightness(80%); */
+    box-shadow: 0 0 9px 1px #000; 
+    margin: 1px;
+    min-height: 278px;
+    max-width: 420px;
+}
+
+.getinspired__tns__tokyo:hover,
+.getinspired__tns__niigata:hover, 
+.getinspired__tns__sapporo:hover{
+    transform: scale(1.2);
+    transition: 1s;
+    z-index: 2;
+    border-radius: 5%;
+    box-shadow: 0 0 19px 3px #000; margin: 1px;    
+}
+
+/* ================================ Getinspired end ============================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+/* ================================ PREFECTURE FLEX_1 start ============== */
+.prefecture_kyotos{
+    margin: 130px auto;
+    margin-bottom: 10px;
+    height: max-content;
+    width: 90%;
+}
+/*=====================*/
+.prefecture {
+    display: flex; 
+    flex-wrap: wrap;
+    align-content:end;
+    background-position:center;
+    background-size:cover;
+    object-fit: cover;
+}
+
+.prefecture__header, .prefecture__descript, .prefecture__arrow {
+    margin: 55px 0px 0px 108px;
+    padding-right: 2px;
+    text-align: left;
+    border: none;   
+    background: none;
+    min-width: 250px;  
+    max-width: 500px; 
+    
+    flex-wrap: wrap;
+    align-content:end;
+     background-position:center;
+    background-size:cover;
+    object-fit: cover;
+} 
+
+.prefecture__descript{
+    margin-bottom: 55px;
+    color: black;
+}
+
+.prefecture__img__flex{
+    width: 550px;
+    height: 354px;  
+    display: flex;
+    flex-wrap: wrap;
+    align-content:end;   
+    background-image: radial-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.1)), url(https://j.gifs.com/vb2GzA.gif);    
+    background-position:center;
+    background-size:cover;   
+    box-shadow: 55px 55px 55px 0 white inset, -55px -55px 55px 0 white inset;      
+}
+
+.prefecture__img {
+    width: 550px;
+    height: 354px;         
+    transition: 4s cubic-bezier(1, -1, 0, 2);     /* треугольник */ 
+    clip-path: polygon(50% 30%, 0% 100%, 100% 100%); /* треугольник */
+    transition: all 1s ease;    
+     flex-wrap: wrap;
+    align-content:end;
+     background-position:center;
+    background-size:cover;
+    object-fit: cover;    
+}
+
+.prefecture__img:hover { 
+    transition: 6s cubic-bezier(1, -1, 0, 2);     
+    clip-path: polygon(50% -10000%, 0% 100%, 100% 100%);    
+    transition: all 6s ease; 
+    /* box-shadow: 0 0 19px 3px #000; margin: 1px;     */
+}
+
+.prefecture__flex {
+    margin-left: -50px;
+    margin-right: 10px;
+    align-content: end;
+    max-width: 550px;
+}
+
+/* ================================ PREFECTURE FLEX_1 end ============ */
+/* ================================ KYOTOS FLEX_2 start ============== */
+.kyotos {
+    margin-top: 55px;
+    display: flex; 
+    flex-wrap:wrap-reverse;
+    align-content:end;
+    background-position:center;
+    background-size:cover;
+    object-fit: cover;  
+}
+
+.kyotos__flex{
+    margin-left: -35px;
+    margin-right: 20px;
+    align-content:end;
+    max-width: 550px;
+}
+
+.kyotos__img {
+/*     padding-top: 20px; */
+    width: 550px;
+    height: 354px;
+    clip-path: ellipse(200px 600px at center);
+     transition: all 2s ease;     
+    box-shadow: 0 0 3px 2px #000; margin: 0px; 
+}
+
+.kyotos__img:hover { 
+    box-shadow: 0 0 8px 5px #000; margin: 0px; 
+    clip-path: ellipse(100% 600px at center);
+    transition: all 1.8s ease;       
+    border-radius: 6px;
+}
+/* ================================ PREFECTURE FLEX_2 end ====-------========== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ================================ Today start =============================== */
+
+.today {
+    margin: 55px auto;
+    margin-bottom: 0px;
+    max-height:max-content;
+    width: 90%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));      
+}
+
+.today__nagoya,
+.today__niigata,
+.today__osaka,
+.today__saitama,
+.today__ueno,
+.today__shibuya{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    text-align: left;
+}
+ 
+.today__img{
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+.today__img>img{
+    width: 100%;
+}
+
+/* -------------------------- */
+
+.today__img__fond{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    transition: all 2s ease; 
+    transform:translatey(60px);
+}
+
+.today__img__fond__static{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* transition: all 2s ease; 
+    transform:translatey(60px); */
+}
+
+.today__img:hover .today__img__fond{
+    transition: all 0.6s ease; 
+    transform:translatey(0px);
+}
+
+.today__img__fond__title{
+    justify-content:flex-start;
+    justify-self: start;
+    justify-items: flex-start;
+    padding-right: 100px;
+    padding-left: 15px;
+}
+
+.today__img__fond__number{
+    padding-left: 10px;
+}
+
+.today__img__fond__comment{
+    margin-bottom: -5px;
+    margin-left: 2px;
+}
+
+/* -------------------------- */
+
+.today__descript{
+    color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.today__button {
+    padding: 12px 19px;
+    color: white;
+    font-size: 16px;
+    left: 5.56%;
+    right: 86.25%;
+    top: 68.79%;
+    bottom: 30.47%;
+    background: #006DFE;
+}
+
+/* ================================== Today end =============================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ================================ Video start =============================== */
+
+.videograf {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: -5px;
+}
+
+.videograf video {
+    /* width:-moz-available; */
+    width: 100%;
+}
+
+.videograf__logo {
+    position: absolute;
+    top:5%;
+    left:3.3%;
+    background: rgba(31, 136, 36, 0.5);
+    border-radius: 48%;
+    width: 15%;
+    padding: 1% 1%;
+}
+
+/* ================================= Video end =============================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ================================ Footer start =============================== */
+
+footer {
+    background-color: #0E1D28;  
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;    
+    align-items:flex-start;    
+}
+
+.footer__logo {
+    margin: 120px 150px 0px 220px;
+    width: 175px;
+    height: 65px;
+}
+
+/* ---------------- */
+
+footer ul {
+    margin: 120px 20px 120px 20px;
+    min-width: 115px;
+ }
+ 
+ footer li {
+    list-style-type:none;
+    padding:5px 10px;
+ }
+ 
+/* ---------------- */
+
+footer li a {
+    position: relative;
+    color: #fdfdfd;
+    /*  font-size: 1.25rem; */
+    text-decoration: none;
+      font-size:16px;
+}
+  
+footer li a::before {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
+    width: 0;
+    height: 1.5px;
+    background-color: #1d9c23;
+}
+  
+footer li a:hover:before {
+    width: 100%;
+}
+  
+footer li a::before {
+    transition: width 0.35s;
+}
+  
+/* ================================= Footer end =============================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ======== Спрятать  hamburger menu на больших экранах start ================= */
+@MEDIA (max-width: 1000px) {
+    .header__nav__menu{display: none;}
+ }
+ 
+ @MEDIA (min-width: 1000px) {
+     .hamb__menu{display: none;}
+ }
+/* ======== Спрятать  hamburger menu на больших экранах end =================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ================================ @MEDIA start =============================== */
+
+@MEDIA  (max-width: 1000px) {
+
+/* ---------Header start--------- */
+
+/* ---Header hamburger menu start--- */
+.checkbox {
+    display: none;
+  }
+  
+  .button {
+    position: relative;
+    background-color: #4012e6c7;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5vh; 
+    right: 5vw; 
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem black;
+    text-align: center; 
+    cursor: pointer;
+  }
+  
+  .background {
+    margin-right: -100px;
+    height: 2.3rem;
+    width: 2.7rem;
+    border-radius: 50%;
+    position:fixed;
+    top: 6.3vh; 
+    right: 7.1vw; 
+    background-image: radial-gradient(green,  black, transparent 40%);
+    z-index: 1000;
+  
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -60vw;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s;
+  }
+  
+  .list {
+    position: absolute;
+    top:180px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style:none;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .item {
+    margin: 0.1rem;
+    font-size: 20px;
+  }
+  
+  .link:link,
+  .link:visited {
+    display: inline-block;
+    font-size: 1.8rem;
+/*     font-weight: 300; */
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+/*     background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    ); */
+    background-size: 220%;
+    transition: all 0.4s;
+  }
+  
+  .link:hover,
+  .link:active {
+    color: lightgreen;
+    cursor: pointer;
+  }
+  
+  /* functionality */
+  .checkbox:checked ~ .background {
+    transform: scale(80);
+  }
+  .checkbox:checked ~ .nav {
+    opacity: 1;
+    width: 100%;
+    right: 0;
+  }
+  
+ /* styling hamb ICON */
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .icon,
+  .icon::before,
+  .icon::after {
+    width: 3rem;
+    height: 3px;
+    background-color: yellowgreen;
+    display: inline-block;
+  }
+  
+  .icon::before,
+  .icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+  
+  .icon::before {
+    top: -0.8rem;
+  }
+  .icon::after {
+    top: 0.8rem;
+  }
+  
+  .button:hover icon:before {
+    top: -1rem;
+  }
+  .button:hover icon::after {
+    top: 1rem;
+  }
+  
+  .checkbox:checked + .button .icon {
+    background-color: transparent;
+  }
+  
+  .checkbox:checked + .button .icon::before {
+    top: 0;
+    transform: rotate(235deg);
+  }
+  .checkbox:checked + .button .icon::after {
+    top: 0;
+    transform: rotate(-235deg);
+  }
+    
+  /*----Подчеркивание меню---- */  
+   li .link {
+      position: relative;
+      color: #fdfdfd;   
+  /*     text-decoration: none; */
+  /*       font-size:16px; */
+  }
+    
+  li .link::before {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -5px;
+      width: 0;
+      height: 2px;
+      background-color: #d11d1d;
+  }
+    
+  li .link:hover:before {
+      width: 100%;
+  }
+    
+  li .link::before {
+      transition: width 0.35s;
+  }
+/* ---Header hamburger menu end--- */
+
+
+.header__logo {
+    margin: 85px 20px 0px 56px;
+}
+
+.articlediscover__h1 {
+    margin: 180px 0px 0px 56px;
+    font-size: 45px;
+    min-width: 250px;
+}
+
+.articlediscover__descript {
+    margin: 22px 15px 0px 56px;
+    min-width: 280px;
+}
+
+.articlediscover__search {
+    margin: 60px 0px 0px 56px;
+}
+
+input[type="radio"]:checked {   
+    box-shadow: inset 0 0 0 0.2em green, 0 0 0 0.3em green;
+}
+
+input[type="radio"] {
+    appearance: none;
+    margin-right: 25px;  
+    background: #5b3f35;
+    box-shadow: inset 0 0 0 0.4em #978e8e, 0 0 0 0.3em;
+    border-radius: 50%;
+    transition: 0.8s;
+    cursor: pointer;
+    color: #2b3560; 
+    padding: 0.52em;
+}
+
+/* ---------Header end--------- */
+
+/* ---------Asidebenefits start--------- */
+.asidebenefits {
+    margin: -300px auto auto;
+    padding: 50px 20px;
+    min-width: min-content;
+}
+
+.asidebenefits__learn__title__welcome {
+    margin: 25px 0px 26px 0px;
+}
+
+.asidebenefits__descript {
+    margin-bottom: 15px;
+}
+
+.text_arrow {
+    margin-top: 10px;
+}
+
+.text_arrow {
+    margin-top: 10px;
+}
+/* ---------Asidebenefits end--------- */
+
+/* ---------Getinspired start--------- */
+.getinspired__title {
+    margin: 110px auto auto;
+    min-width: 280px;
+}
+
+.getinspired__title__text {
+    font-weight: 600;
+    font-size: 30px;
+    min-width: initial;
+}
+
+.getinspired__line {
+    margin-left: 4%;    
+}
+
+.getinspired__img__text {
+    font-size: 40px;
+}
+/* ---------Getinspired end--------- */
+
+/* ---------Prefecture_kyotos start--------- */
+.prefecture_kyotos {
+    margin: 100px auto;    
+}
+
+.prefecture__img__flex {
+    max-width: 100%;
+}
+
+.prefecture__img {
+    max-width: 100%;
+}
+
+.prefecture__descript {
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.kyotos__img {    
+    width: 100%;
+}
+
+.kyotos__flex {
+    margin-left: -50px;
+}
+/* ---------Prefecture_kyotos end--------- */
+
+/* ---------Footer start--------- */
+
+.footer__logo {
+    margin: 56px 150px 0px 56px;
+}
+
+footer ul {
+    margin: 20px 20px 10px 56px;
+}
+/* ---------Footer end--------- */
+
+}
+/* ================================ @MEDIA end =============================== */
+
+
